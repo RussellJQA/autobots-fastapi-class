@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "my_package2"
+version = "0.1.1"
+description = "This is a description"
+authors = ["Russell Johnson <16086475+RussellJQA@users.noreply.github.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.26.0"
+pydantic = "^1.8.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+black = "^21.9b0"
+flake8 = "^3.9.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
