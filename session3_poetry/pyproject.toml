@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "session3_poetry"
+version = "0.1.0"
+description = ""
+authors = ["Russell Johnson <16086475+RussellJQA@users.noreply.github.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.26.0"
+pydantic = "^1.8.2"
+fastapi = "^0.68.1"
+uvicorn = {extras = ["standard"], version = "^0.15.0"}
+black = "^21.9b0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+black = {version = "^21.9b0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
